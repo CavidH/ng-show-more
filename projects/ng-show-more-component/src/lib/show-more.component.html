@@ -1,0 +1,7 @@
+<ng-container>
+<span [class]="textClass">{{text}}</span>
+<a *ngIf="!showOnlyText" [ngStyle]="{'color': linkColor,'cursor': 'pointer'}" (click)="toggleLength()">
+  <span *ngIf="!hide">{{more}}</span>
+  <span *ngIf="hide">{{less}}</span>
+</a>
+</ng-container>
